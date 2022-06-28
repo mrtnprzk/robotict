@@ -17,7 +17,7 @@ const Input = (props) => {
     const value = e.target.value;
     setNumber(value);
 
-    if (value > 100 || value < 1 || value === "") {
+    if (value > props.range.to || value < props.range.from || value === "") {
       setDisable(true);
     } else {
       setDisable(false);

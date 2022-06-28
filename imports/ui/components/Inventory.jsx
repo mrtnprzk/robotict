@@ -10,7 +10,7 @@ import ImageIcon from "@mui/icons-material/Image";
 import Button from "@mui/material/Button";
 
 const Inventory = (props) => {
-  const icon = <ImageIcon />;
+  
   return (
     <Fragment>
       {props.items.map((item, index) => (
